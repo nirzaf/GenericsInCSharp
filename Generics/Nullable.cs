@@ -2,7 +2,7 @@
 {
     public class Nullable<T> where T : struct
     {
-        private object _value;
+        private readonly object _value;
 
         public Nullable()
         {
@@ -13,10 +13,7 @@
             _value = value;
         }
 
-        public bool HasValue
-        {
-            get { return _value != null; }
-        }
+        public bool HasValue => _value != null;
 
         public T GetValueOrDefault()
         {

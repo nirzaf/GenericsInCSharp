@@ -9,9 +9,6 @@ namespace Generics
             throw new NotImplementedException();
         }
 
-        public int this[int index]
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public int this[int index] => throw new NotImplementedException();
     }
 }
